@@ -1,0 +1,11 @@
+numpy
+pillow
+biopython
+git@https://github.com/kad-ecoli/pdc
+joblib
+pandas
+requests
+scikit-learn
+torch
+torchvision
+tqdm
