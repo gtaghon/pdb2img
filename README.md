@@ -41,7 +41,7 @@ The pipeline will use all available cores to download all existing alphafold mod
 ### Training a classifier (ResNet-50)
 The following command will train ResNet-50 for multilabel classification of the png images. The labels are the top 100 (--max-classes) most frequently observed GO annotations provided in the csv file (--data-path). The input dataset is automatically partitioned into randomly shuffled 70/15/15 train/validation/test sets. The classifier will report live validation loss as well as validation Label Ranking Average Precision (LRAP) score.
 ```
-accelerate launch classifier-distributed.py --epochs 150 --lr 0.001 --max-classes 100 --data-path datasets/xx/file.csv --img-dir datasets/xx/images
+torchrun classifier-distributed.py --epochs 150 --lr 0.001 --max-classes 100 --data-path datasets/xx/file.csv --img-dir datasets/xx/images
 ```
 
 ## Precalculated image datasets
