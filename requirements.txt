@@ -2,7 +2,7 @@ accelerate
 numpy
 pillow
 biopython
-git@https://github.com/kad-ecoli/pdc
+git@https://github.com/kad-ecoli/pdc.git
 joblib
 pandas
 requests
