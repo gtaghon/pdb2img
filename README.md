@@ -4,9 +4,10 @@ Informative 2D maps from 3D protein models.
 ## Installation
 1. Clone this repository.
 ```
-git clone https://github.com/gtaghon/pdb2img/
+git clone https://github.com/gtaghon/pdb2img.git
 cd pdb2img
 ```
+
 2. Install requirements. Use a virtual enviroment for cleanliness:
 ```
 python -m venv venv
@@ -14,10 +15,12 @@ python -m venv venv
 pip install -r requirements.txt
 ```
 
-3. Build Protein Data Compressor (PDC) inside the pdb2img directory (Ensure that you have a C++ compiler installed):
+3. Clone and build Protein Data Compressor (PDC) inside the pdb2img directory. Ensure that you have a C++ compiler installed:
 ```
+git clone https://github.com/kad-ecoli/pdc.git
 cd pdc
 make
+cd ..
 ```
 
 ## Usage
