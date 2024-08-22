@@ -40,3 +40,8 @@ The following command will train ResNet-50 for multilabel classification of the 
 ```
 accelerate launch classifier-distributed.py --epochs 150 --lr 0.001 --max-classes 100 --data-path datasets/xx/file.csv --img-dir datasets/xx/images
 ```
+
+## Precalculated image datasets
+1024x1024 pixel alphafold proteome image sets- Human (hs), mouse (mm). PDB models current as of 8/7/2024.
+
+https://drive.google.com/drive/folders/15h-jo5_Of0cHVxV98JhZk358kt3gq4RE?usp=sharing
